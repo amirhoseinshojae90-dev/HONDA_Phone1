@@ -1,0 +1,19 @@
+ساخت APK برای HONDA Phone 1
+
+این پروژه برای ساخت مستقیم APK آماده شده است.
+
+مسیر برنامه:
+mobile/phone1
+
+تنظیمات اضافه‌شده:
+- eas.json برای APK
+- اجازه ارتباط HTTP محلی با ESP8266 روی 192.168.1.50
+- مجوزهای لازم شبکه، موقعیت مکانی، دوربین و میکروفون
+- workflow گیت‌هاب برای ساخت خودکار APK
+
+روش GitHub Actions:
+1) کل محتوای این پروژه را در ریشه Repository قرار بده.
+2) به تب Actions برو و workflow با نام Build HONDA Phone 1 APK را اجرا کن.
+3) بعد از پایان موفق، در بخش Artifacts فایل HONDA-Phone1-APK را بگیر.
+
+این workflow از Expo prebuild و Gradle استفاده می‌کند و برای ساخت APK نیازی به Expo Token ندارد.

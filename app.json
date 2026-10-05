@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "HONDA",
+    "slug": "honda-motor-smart-phone1",
+    "version": "3.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/icon.png",
+    "scheme": "honda-motor",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "HONDA برای عکس و فیلم‌برداری به دوربین نیاز دارد.",
+          "microphonePermission": "HONDA برای ضبط ویدیو به میکروفون نیاز دارد."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "HONDA برای نمایش موقعیت و سرعت به موقعیت مکانی نیاز دارد."
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.honda.motorsmart.phone1",
+      "versionCode": 1,
+      "usesCleartextTraffic": true,
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "RECORD_AUDIO"
+      ]
+    },
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
